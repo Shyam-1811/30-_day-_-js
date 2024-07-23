@@ -8,13 +8,13 @@ function check(num) {
         console.log(`number ${num} is odd no.`);
     }
 }
-check(3007);
+check(3002);
 // Task - 2
 function Square(number) {
-    let result = number*number;
-    console.log(` square of number ${number} is ${result}`);
+    return number*number; 
 }
-Square(5);
+const result = Square(5)
+    console.log(`result is : ${result}`);
 // Task - 3
 function max(Number1, Number2) {
     if (Number1 > Number2) {
@@ -31,8 +31,41 @@ function concat(string, strings) {
 }
 console.log(concat("Shyam","Verma"))
 // Task - 5
-const sum = (Number3, Number4)=>
+const addTwoNum = (Number3, Number4)=>
     Number3 + Number4
-const addTwoNum = sum(5,2)
-console.log(`sum of given no. is ${addTwoNum}`);
+console.log(`sum of the two number is : ${addTwoNum(3,8)}`);
+// Task - 6
+const name = (String)
+
+
+// Task - 7
+function multiply(a, b = 1) {
+    return a * b;
+  }
+ console.log(` product is ${multiply(5, 2)}`);
+//  Task - 8
+const user = {
+    username  : "Shyam Verma",
+    age: 22
+}
+function passingObject(anyObject){
+    console.log(` My username is ${anyObject.username} and age is ${anyObject.age = 44}`);
+}
+passingObject(user);
+// Task - 9
+
+function callbackFunction(){
+    console.log('I am  a callback function');
+}
+function higherOrderFunction(func){
+    console.log('I am higher order function')
+    func()
+}
+
+higherOrderFunction(callbackFunction);
+
+
+
+
+
 
