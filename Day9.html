@@ -1,0 +1,65 @@
+<!-- Day- 9 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9</title>
+</head>
+<body>
+  <p id="A">Click me to change the text!</p>
+
+    <ul>
+    
+            <li id="1">html</li>
+            <li id="2">css</li>
+            <li id="3">js</li>
+            <li id="4">react</li>
+            <div class="language">
+            <li>Phy</li>
+            <li>Chem</li>
+            <li>Bio</li>
+          </div>
+    </ul>
+   <div class="id">Shyam verma </div>
+</body>
+<script>
+    // task - 1
+    const select =document.getElementById("4")
+    select.textContent = "Welcome to 30 day javascript challenge"
+    let  change = document.querySelector(".id")
+    console.log(change);
+    // task - 2
+      change.style.backgroundColor = " Red"
+    //   task - 3
+    const div = document.createElement('div')
+  div.setAttribute("title", "write")
+  div.id = 'one';
+  const add = document.createTextNode("This is the creation of new element by in DOM")
+  div.appendChild(add)
+  document.body.appendChild(div)
+  // task - 4
+//   function addLang(langName) {
+//     const li = document.createElement('li')
+//     li.innerHTML= `${langName}`;
+// document.querySelector('.language')
+// appendChild(li)
+//   }
+//   addLang("Maths")
+  // Task - 5
+ const Delete = document.getElementById("2")
+ Delete.remove();
+//  Task - 6
+const rem = document.querySelector('.ul')
+rem.pop();
+// TAsk - 7,8
+// pass
+// Task - 9
+const changeText = document.getElementById(".A");
+console.log(changeText);
+changeText.addEventListener("click", function() {
+  changeText.textContent = "Text has been changed!";
+});
+</script>
+
+</html>
