@@ -1,0 +1,55 @@
+<!-- Day - 10 -->
+ <!-- Task - 1 -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10</title>
+  </head>
+  <body>
+    <p id="3">shyam verma</p>
+    <p id="Two"> various form data </p>
+    <p style="background-color: burlywood;" id="one"> Hello everyone! Welcome to the 30 day javascript challenge </p>
+    <button id="submit">submit</button>
+    <br>
+    <br>
+    <hr>
+      <li>
+        <img  id="shinchan" src="shinchan.jpg" alt="shinchan" style="height: 300px; width: 200px; ">
+       </li>
+    
+  </body>
+  <script>
+    // Task - 1
+    const change = document.getElementById("one")
+    console.log(change);
+    document.getElementById("submit").addEventListener('click', function (e) {
+      change.textContent=" The text content has been changed by clicking on the events";
+    },false)
+    // task - 2
+    const all =  document.getElementById("shinchan");
+   document.getElementById("shinchan").addEventListener('dblclick', function(e) {
+   all.remove();
+   },false)
+  //  Task - 3,4
+  const all1 =  document.getElementById("one");
+   document.getElementById("one").addEventListener('mouseover', function(e) {
+  all1.style.backgroundColor= "green"
+   },false)
+  //  Task - 5,6
+ pass;
+//  Task - 7,8
+const find = document.getElementById("Two")
+document.getElementById("Two").addEventListener('submit', function(e) {
+  console.log("clicked inseide");
+  e.preventDefault();
+  console.log(find);
+   },false)
+  //  Task - 9
+  const all2 =  document.getElementById("3");
+   document.getElementById("3").addEventListener('click', function(e) {
+  all2.style.backgroundColor= "red"
+   },false)
+  </script>
+  </html>
